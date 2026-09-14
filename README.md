@@ -1,1 +1,1 @@
-# Patitas-Potosinos
+# Patitas-Potosinas
