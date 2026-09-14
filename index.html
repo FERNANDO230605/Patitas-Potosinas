@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Patitas Potosinas — Adopta, no compres</title>
+<meta name="description" content="Plataforma de adopción de perros en San Luis Potosí. Encuentra a tu nuevo mejor amigo." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#/" class="logo" aria-label="Patitas Potosinas inicio">
+      <div class="logo-mark">🐾</div>
+      <div class="logo-text">
+        <strong>Patitas Potosinas</strong>
+        <span>Adopta · SLP</span>
+      </div>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#/" data-route="/">Inicio</a>
+      <a href="#/mascotas" data-route="/mascotas">Mascotas</a>
+      <a href="#/como-adoptar" data-route="/como-adoptar">Cómo adoptar</a>
+      <a href="#/nosotros" data-route="/nosotros">Nosotros</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#/login" class="btn btn-ghost btn-sm">Iniciar sesión</a>
+      <a href="#/registro" class="btn btn-primary btn-sm">Registrarse</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#/" data-route="/">Inicio</a>
+  <a href="#/mascotas" data-route="/mascotas">Mascotas</a>
+  <a href="#/como-adoptar" data-route="/como-adoptar">Cómo adoptar</a>
+  <a href="#/nosotros" data-route="/nosotros">Nosotros</a>
+  <a href="#/login" class="btn btn-ghost">Iniciar sesión</a>
+  <a href="#/registro" class="btn btn-primary">Crear cuenta</a>
+</div>
+
+<!-- APP -->
+<main id="app"></main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo">
+          <div class="logo-mark">🐾</div>
+          <div class="logo-text">
+            <strong>Patitas Potosinas</strong>
+            <span>Adopta · SLP</span>
+          </div>
+        </div>
+        <p class="footer-about">
+          Plataforma sin fines de lucro que conecta perritos rescatados de San Luis Potosí
+          con familias responsables. Adopta, no compres. 🧡
+        </p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="TikTok">♪</a>
+          <a href="#" aria-label="WhatsApp">✆</a>
+        </div>
+      </div>
+      <div>
+        <h4>Adopción</h4>
+        <ul>
+          <li><a href="#/mascotas">Ver mascotas</a></li>
+          <li><a href="#/como-adoptar">Cómo adoptar</a></li>
+          <li><a href="#/mascotas">Requisitos</a></li>
+          <li><a href="#/registro">Crear cuenta</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="#/nosotros">Sobre nosotros</a></li>
+          <li><a href="#/nosotros">Refugios aliados</a></li>
+          <li><a href="#/nosotros">Voluntariado</a></li>
+          <li><a href="#/nosotros">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Recibe novedades</h4>
+        <p style="font-size:.9rem;line-height:1.65;">
+          Nuevos peluditos en adopción y eventos de adopción en SLP.
+        </p>
+        <form class="newsletter" id="newsletterForm">
+          <input type="email" placeholder="tu@correo.com" required aria-label="Correo electrónico" />
+          <button type="submit">Unirme</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Patitas Potosinas. Hecho con 🧡 en San Luis Potosí, México.</span>
+      <span><a href="#">Aviso de privacidad</a> · <a href="#">Términos</a></span>
+    </div>
+  </div>
+</footer>
+
+<div id="modalRoot"></div>
+<div class="toast-wrap" id="toastWrap"></div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
