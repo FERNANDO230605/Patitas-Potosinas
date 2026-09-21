@@ -1,6 +1,6 @@
 import { MASCOTAS } from '../data.js';
 import { petCardHTML } from '../components/petCard.js';
-import { EDAD_CATEGORIAS, categoriaEdad, $, $$ } from '../utils.js';
+import { EDAD_CATEGORIAS, categoriaEdad, $,$$ } from '../utils.js';
 
 const filtros = { q:'', sexo:'', edad:'', tamano:'', estado:'', orden:'recientes' };
 
@@ -27,6 +27,7 @@ export function render(){
             <option value="nombre">Nombre (A–Z)</option>
             <option value="edad-asc">Edad: menor a mayor</option>
             <option value="edad-desc">Edad: mayor a menor</option>
+            <option value="urgente">Casos Urgentes</option>
           </select>
         </div>
 
@@ -131,6 +132,7 @@ function aplicarFiltros(){
   if (filtros.orden === 'nombre') lista.sort((a,b) => a.nombre.localeCompare(b.nombre));
   if (filtros.orden === 'edad-asc') lista.sort((a,b) => edadNum(a) - edadNum(b));
   if (filtros.orden === 'edad-desc') lista.sort((a,b) => edadNum(b) - edadNum(a));
+  if (filtros.orden === 'urgente') lista = lista.filter(m => m.estado === 'Disponible');
 
   const cont = $('#petsResults');
   const count = $('#resultsCount');
