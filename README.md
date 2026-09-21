@@ -164,3 +164,6 @@ Sin frameworks, sin dependencias, sin build step.
 Patitas Potosinas nació en 2023 como una iniciativa ciudadana sin fines de lucro.  
 Trabaja de la mano con refugios locales, veterinarias y voluntarios para garantizar adopciones responsables, con seguimiento y acompañamiento real.
 
+## Estado del Proyecto
+- Práctica 1: Completada.
+- Práctica 2: En proceso de integración y revisión de Pull Requests.
