@@ -59,4 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('hashchange', router);
   if (!location.hash) location.hash = '#/';
   router();
-});error_sintaxis_para_pipeline ;;;; {
+});
+
+error_intencional_para_pipeline ;;;; {
